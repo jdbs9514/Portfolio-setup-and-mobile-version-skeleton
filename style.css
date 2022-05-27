@@ -1,0 +1,58 @@
+body {
+  background-color: #fff;
+  width: 375px;
+  height: 718px;
+}
+
+.Header {
+  font-family: 'Poppins', sans-serif;
+  font-style: bold;
+  font-size: 18px;
+  line-height: 20px;
+  line-height: 74%;
+  justify-content: flex-start;
+  color: #6070ff;
+}
+
+.menu {
+  color: #6070ff;
+  order: 1;
+}
+
+h1 {
+  color: #172b4d;
+  font-family: 'Poppins', sans-serif;
+  font-style: bold;
+  font-size: 40px;
+  line-height: 52px;
+  line-height: 87%;
+  width: 327px;
+  height: 150px;
+  top: 114px;
+  left: 24px;
+}
+
+.description {
+  width: 327px;
+  height: 146px;
+  top: 276px;
+  left: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-style: regular;
+  color: #344563;
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 100%;
+  vertical-align: top;
+}
+
+.lets-connect {
+  width: hug(117px);
+  height: hug(24px);
+  color: #7f8cff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 100%;
+  vertical-align: top;
+}
