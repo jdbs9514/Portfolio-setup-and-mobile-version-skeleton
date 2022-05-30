@@ -2,8 +2,8 @@ body {
   background-color: #fff;
   background-image: url("images/mobile.png");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
+  padding-left: 20px;
 }
 
 .Header {
@@ -40,7 +40,6 @@ h1 {
   color: #344563;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 500;
 }
 
 .lets-connect {
@@ -49,8 +48,14 @@ h1 {
   font-size: 16px;
   line-height: 100%;
   vertical-align: top;
+  margin-top: 50px;
+  font-weight: 900;
 }
 
 .icons {
   color: #505f79;
+}
+
+p {
+  font-weight: 5px;
 }

@@ -1,4 +1,4 @@
-## Name project
+## Portfolio project
 
 Portfolio: setup and mobile version skeleton
 
