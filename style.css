@@ -217,3 +217,83 @@ h6 {
 h1.about {
   margin-top: 200px;
 }
+
+/* Seventh part */
+
+div.languajes {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 150px;
+}
+
+ul.works {
+  flex-direction: column;
+  list-style-type: none;
+  font-family: 'Poppins', sans-serif;
+  color: #253858;
+  font-size: 15px;
+  margin-left: -30px;
+}
+
+div.frameworks {
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 90px;
+}
+
+div.skills {
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+hr {
+  color: #dfe1e6;
+  width: 327px;
+  height: -1px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+i.fa-angle-right {
+  align-items: baseline;
+}
+
+li.java {
+  margin: 90 310 90 310;
+  background-color: #f7f7f9;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+li.ht {
+  margin: 90 310 90 310;
+  background-color: #f7f7f9;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+li.cs {
+  margin: 90 310 90 310;
+  background-color: #f7f7f9;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+img.js {
+  vertical-align: middle;
+}
+
+img.ht {
+  vertical-align: middle;
+}
+
+img.cs {
+  vertical-align: middle;
+}
+
+.fa {
+  align-items: end;
+}
