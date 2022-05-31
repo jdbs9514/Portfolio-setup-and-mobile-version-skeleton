@@ -13,7 +13,7 @@ this is my second project and i make a simple porfolio
 - test.md
 - linters 
 - Zigma
-- Fletbox
+- Flexbox
 
 ## Author
 
