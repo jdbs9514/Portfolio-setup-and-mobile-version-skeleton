@@ -4,7 +4,17 @@ Portfolio: setup and mobile version skeleton
 
 ## Description
 
-this is my second project and i make a simple porfolio 
+this is my second project and i make a simple porfolio with bootstrap , CSS, HTML, Flexbox to learn habilities for make t friendly  for the viewers in mobile devices and laptop.
+
+
+
+## GETTING STARTED
+
+copy this repo : https://github.com/jdbs9514/Portfolio-setup-and-mobile-version-skeleton
+
+cd to the folder name.
+
+right click on the HTML file and open it in the browser.
 
 ## Built With
 
