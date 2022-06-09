@@ -8,6 +8,9 @@ body {
   padding-left: 20px;
   overflow-x: hidden;
   width: 100%;
+  width: 327px;
+  height: 146px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .Header {
@@ -218,14 +221,21 @@ h6 {
 }
 
 /* sixth part */
+.container-6 {
+  display: grid;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 
-.description-test {
+.description-test p {
   font-family: 'Poppins', sans-serif;
   color: #344563;
   font-size: 16px;
   line-height: 24px;
   margin: 20px;
   text-align: justify;
+  width: 327px;
+  height: 144px;
 }
 
 h1.about {
@@ -320,67 +330,42 @@ section.container {
   background-image: url("/images/header-shapes\ mobile.svg");
   background-repeat: no-repeat;
   background-color: #6070ff;
-  background-size: cover;
+  background-size: auto;
   border-top-left-radius: 5rem;
   padding-top: 15px;
   padding-left: 15px;
   margin-top: 150px;
+  overflow-x: hidden;
+  width: 375px;
+  height: 779px;
 }
 
-.form h1 {
-  width: 801px;
-  height: 56px;
-  font-weight: 700;
-  line-height: 52px;
-  color: #fff;
-}
-
-.form p {
-  width: 100%;
-  height: auto;
+textarea {
+  font-size: 13px;
   font-family: 'Poppins', sans-serif;
-  font-style: regular;
-  font-size: 16px;
-  line-height: 24px;
-  line-height: 100%;
-  vertical-align: top;
-  color: #fff;
-}
-
-#form-name {
-  width: 273px;
-  height: 18px;
-  font-size: 17px;
-  line-height: 20px;
-  color: #172b4d;
-  font-weight: 100;
-}
-
-#form-email {
-  width: 273px;
-  height: 18px;
-  font-size: 17px;
-  line-height: 20px;
-  color: #172b4d;
-  font-weight: 100;
-}
-
-#form-message {
-  width: 273px;
-  height: 140px;
-  font-size: 15px;
-  font-weight: 400;
-  color: #b3bac5;
-}
-
-button {
-  color: #6070ff;
+  margin-left: 1px;
+  margin-top: 30px;
   border-radius: 8px;
+  padding: 10px 15px 10px 15px;
+  align-items: flex-start;
+  width: 327px;
+  height: 170px;
+}
+
+.b1 {
+  padding: 24px 45px 24px 45px;
   background-color: #fff;
-  width: 108px;
-  height: 24px;
-  line-height: 24px;
-  margin-top: 24px;
+  border-radius: 8px;
   border: 1px solid #fff;
+  color: #6070ff;
+  margin-top: 30px;
   font-family: 'Poppins', sans-serif;
+}
+
+#contact {
+  color: #fff;
+}
+
+.form-title {
+
 }
