@@ -155,9 +155,7 @@ h3 {
   font-weight: 510;
   color: #7a869a;
   display: flex;
-  justify-content: center;
   justify-content: space-around;
-  gap: -5px;
   margin-right: 5px;
   line-height: 24px;
   height: 146px;
@@ -657,7 +655,7 @@ h6 {
   height: 144px;
 }
 
-.title {
+.title-2 {
   display: flex;
   justify-content: center;
 }
@@ -823,12 +821,14 @@ section.form-container {
   background-image: url("/images/header-shapes\ mobile.svg");
   background-repeat: no-repeat;
   background-color: #6070ff;
-  background-size: auto;
+  background-size: 100vw;
   border-top-left-radius: 5rem;
   padding-top: 15px;
   padding-left: 15px;
   margin-top: 150px;
   height: 779px;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-title-2 {
@@ -840,10 +840,12 @@ section.form-container {
 textarea {
   font-size: 13px;
   font-family: 'Poppins', sans-serif;
-  margin-left: 1px;
+  margin-left: 24px;
+  margin-right: 24px;
   margin-top: 30px;
   border-radius: 8px;
   padding: 10px 15px 10px 15px;
+  display: flex;
   align-items: flex-start;
   width: 327px;
   height: 170px;
@@ -856,7 +858,11 @@ textarea {
   border: 1px solid #fff;
   color: #6070ff;
   margin-top: 30px;
+  margin-left: -140px;
   font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
 }
 
 .form-title {
@@ -871,4 +877,33 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+}
+
+#form-name {
+  margin-left: 24px;
+  margin-right: 24px;
+  display: flex;
+  justify-content: center;
+  width: 327px;
+  height: 48px;
+}
+
+#form-email {
+  margin-left: 24px;
+  margin-right: 24px;
+  display: flex;
+  justify-content: center;
+  width: 327px;
+  height: 48px;
+  margin-top: 1px;
+}
+
+#form-message {
+  margin-left: 24px;
+  display: flex;
+  justify-content: center;
+  width: 327px;
+  height: 170px;
+  margin-top: 1px;
 }
