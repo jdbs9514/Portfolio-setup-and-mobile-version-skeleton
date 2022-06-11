@@ -1097,7 +1097,7 @@ img.cs-2 {
   .js {
     width: 50%;
   }
-  
+
   li.ht {
     display: flex;
     flex-direction: column;
@@ -1136,7 +1136,6 @@ img.cs-2 {
     margin-left: 34.8rem;
   }
 }
-
 
 /* eight part ----------------------------------- */
 
@@ -1242,5 +1241,5 @@ textarea {
     margin-left: 436px;
     margin-right: 435px;
   }
-}
+  
 }
