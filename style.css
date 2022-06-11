@@ -52,17 +52,14 @@ a {
 
 button.menu {
   color: #6070ff;
-  top: 1rem;
-  right: 62rem;
+  margin-right: 10px;
   border: none;
   background: none;
   cursor: pointer;
 }
 
 .nav-menu {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
+  display: none;
 }
 
 h1 {
@@ -125,6 +122,16 @@ p {
 
   .menu {
     display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-right: 154px;
+    font-size: 15px;
+    font-weight: 500;
   }
 
   h1 {
@@ -894,7 +901,8 @@ h6 {
 h1.about {
   margin-top: 200px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  width: 50%;
 }
 
 .lets-connect-2 {
@@ -1056,8 +1064,7 @@ img.cs-2 {
   .description-test {
     margin-left: 142px;
     display: flex;
-    text-align: justify;
-    width: 70%;
+    width: 100%;
   }
 
   .lets-connect-2 {
@@ -1074,6 +1081,8 @@ img.cs-2 {
 
   .div2 {
     width: 70%;
+    margin-left: 150px;
+    margin-top: 30px;
   }
 
   .lan {
@@ -1222,6 +1231,8 @@ textarea {
   justify-content: center;
   width: 327px;
   height: 48px;
+  font-weight: 500;
+  color: #000;
 }
 
 #form-email {
@@ -1232,6 +1243,8 @@ textarea {
   width: 327px;
   height: 48px;
   margin-top: 1px;
+  font-weight: 500;
+  color: #000;
 }
 
 #form-message {
@@ -1249,5 +1262,9 @@ textarea {
     justify-content: center;
     margin-left: 436px;
     margin-right: 435px;
+  }
+
+  .b1 {
+    margin-left: 8px;
   }
 }
