@@ -30,7 +30,7 @@ body {
 
 .section {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .head {
@@ -99,6 +99,44 @@ h1 {
 
 p {
   font-weight: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .head {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+  }
+
+  a {
+    margin-top: 25px;
+    margin-left: 155px;
+  }
+
+  .menu {
+    margin-top: 25px;
+    margin-right: 154px;
+  }
+
+  h1 {
+    margin-top: 359px;
+    display: flex;
+    text-align: start;
+    margin-left: 260px;
+  }
+
+  .description {
+    margin-left: 260px;
+    margin-right: 260px;
+  }
+
+  .lets-connect {
+    margin-left: 260px;
+  }
+
+  .icons {
+    margin-left: 260px;
+  }
 }
 
 /* second part */
@@ -233,6 +271,52 @@ input {
   border-radius: 10px;
   margin-bottom: 40px;
   margin-left: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .image-header {
+    width: 544px;
+    height: 448px;
+    margin-top: 24px;
+    margin-left: 44px;
+    margin-bottom: 24px;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h3 {
+    margin-top: 48px;
+    font-size: 40px;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 46px;
+    gap: 32px;
+  }
+
+  .text {
+    margin-left: 46px;
+    margin-right: 46px;
+  }
+
+  .buttom {
+    margin-left: 46px;
+  }
+
+  input {
+    margin-left: 46px;
+  }
 }
 
 /* third part ------------------------- */
@@ -371,6 +455,52 @@ h4 {
   margin-left: 28px;
 }
 
+@media screen and (min-width: 768px) {
+  .container-3 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .image-header2 {
+    width: 544px;
+    height: 448px;
+    margin-top: 24px;
+    margin-right: 44px;
+    margin-bottom: 24px;
+  }
+
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h4 {
+    margin-top: 48px;
+    font-size: 40px;
+  }
+
+  .list-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 46px;
+    gap: 32px;
+  }
+
+  .text-2 {
+    margin-left: 46px;
+    margin-right: 46px;
+  }
+
+  .buttom-2 {
+    margin-left: 46px;
+  }
+
+  .input-2 {
+    margin-left: 46px;
+  }
+}
+
 /* fourth part ------------------------------------- */
 
 .container-4 {
@@ -505,6 +635,52 @@ h5 {
   border-radius: 10px;
   margin-bottom: 40px;
   margin-left: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-4 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .image-header3 {
+    width: 544px;
+    height: 448px;
+    margin-top: 24px;
+    margin-left: 44px;
+    margin-bottom: 24px;
+  }
+
+  .col-3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h5 {
+    margin-top: 48px;
+    font-size: 40px;
+  }
+
+  .list-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 46px;
+    gap: 32px;
+  }
+
+  .text-3 {
+    margin-left: 46px;
+    margin-right: 46px;
+  }
+
+  .buttom-3 {
+    margin-left: 46px;
+  }
+
+  .input-3 {
+    margin-left: 46px;
+  }
 }
 
 /* fifth part ---------------------------------------- */
@@ -643,6 +819,52 @@ h6 {
   margin-left: 28px;
 }
 
+@media screen and (min-width: 768px) {
+  .container-5 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .image-header4 {
+    width: 544px;
+    height: 448px;
+    margin-top: 24px;
+    margin-right: 44px;
+    margin-bottom: 24px;
+  }
+
+  .col-4 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h6 {
+    margin-top: 48px;
+    font-size: 40px;
+  }
+
+  .list-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 46px;
+    gap: 32px;
+  }
+
+  .text-4 {
+    margin-left: 46px;
+    margin-right: 46px;
+  }
+
+  .buttom-4 {
+    margin-left: 46px;
+  }
+
+  .input-4 {
+    margin-left: 46px;
+  }
+}
+
 /* sixth part -------------------------------------- */
 
 .description-test {
@@ -657,7 +879,7 @@ h6 {
 
 .title-2 {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 h1.about {
@@ -799,17 +1021,122 @@ img.js {
   vertical-align: middle;
 }
 
-img.ht {
+#ht-2 {
   vertical-align: middle;
 }
 
-img.cs {
+img.cs-2 {
   vertical-align: middle;
 }
 
 .fa {
   align-items: end;
 }
+
+@media screen and (min-width: 768px) {
+  .container-6 {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about {
+    margin-left: 142px;
+  }
+
+  .description-test {
+    margin-left: 142px;
+    display: flex;
+    text-align: justify;
+    width: 70%;
+  }
+
+  .lets-connect-2 {
+    margin-left: 142px;
+  }
+
+  .icons-2 {
+    margin-left: 142px;
+  }
+
+  .input-6 {
+    margin-left: 142px;
+  }
+
+  .div2 {
+    width: 70%;
+  }
+
+  .lan {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .down {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30rem;
+  }
+
+  ul.works {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  li.java {
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #fff;
+  }
+
+  .js {
+    width: 50%;
+  }
+  
+  li.ht {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #fff;
+    justify-content: end;
+    margin-top: 50px;
+    padding-right: 10%;
+    padding-left: 3%;
+    padding-bottom: 3%;
+  }
+
+  #ht-2 {
+    width: 100%;
+  }
+
+  li.cs {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #fff;
+    justify-content: end;
+    margin-top: 50px;
+    padding-right: 10%;
+    padding-left: 3%;
+    padding-bottom: 3%;
+  }
+
+  .cs-2 {
+    width: 100%;
+  }
+
+  button.right1 {
+    margin-left: 30rem;
+  }
+
+  button.right2 {
+    margin-left: 34.8rem;
+  }
+}
+
 
 /* eight part ----------------------------------- */
 
@@ -906,4 +1233,14 @@ textarea {
   width: 327px;
   height: 170px;
   margin-top: 1px;
+}
+
+@media screen and (min-width: 768px) {
+  #pa {
+    display: flex;
+    justify-content: center;
+    margin-left: 436px;
+    margin-right: 435px;
+  }
+}
 }
