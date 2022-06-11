@@ -132,6 +132,11 @@ p {
     margin-right: 154px;
     font-size: 15px;
     font-weight: 500;
+    transition: font-size 1s linear;
+  }
+
+  .nav-menu:hover {
+    font-size: 20px;
   }
 
   h1 {
@@ -287,6 +292,13 @@ input {
   border-radius: 10px;
   margin-bottom: 40px;
   margin-left: 28px;
+  transition: background 1s linear;
+  transition: color 1s linear;
+}
+
+input:hover {
+  background-color: #396df2;
+  color: #fff;
 }
 
 @media screen and (min-width: 768px) {
