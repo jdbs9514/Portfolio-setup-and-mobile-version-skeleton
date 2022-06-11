@@ -42,7 +42,11 @@ body {
   font-weight: 700;
 }
 
-.navigation {
+a {
+  text-decoration: none;
+}
+
+.navigation-mobile {
   margin-right: 10px;
 }
 
@@ -53,6 +57,12 @@ button.menu {
   border: none;
   background: none;
   cursor: pointer;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 h1 {
@@ -114,8 +124,7 @@ p {
   }
 
   .menu {
-    margin-top: 25px;
-    margin-right: 154px;
+    display: none;
   }
 
   h1 {
