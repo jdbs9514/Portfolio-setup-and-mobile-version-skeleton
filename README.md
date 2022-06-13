@@ -1,9 +1,7 @@
 ## Portfolio project
 
-Portfolio: setup and mobile version skeleton 
 
-If you want to check my project you con go to this 
-[Website](https://jdbs9514.github.io/Portfolio-setup-and-mobile-version-skeleton/)
+Portfolio: setup and mobile version skeleton [Website]( https://jdbs9514.github.io/Portfolio-setup-and-mobile-version-skeleton/)
 
 ## Description
 
