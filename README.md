@@ -1,5 +1,6 @@
 ## Portfolio project
 
+
 Portfolio: setup and mobile version skeleton [Website]( https://jdbs9514.github.io/Portfolio-setup-and-mobile-version-skeleton/)
 
 ## Description
@@ -29,9 +30,9 @@ right click on the HTML file and open it in the browser.
 
 Josué David Benavides Salinas
 
-twitter:@JODA9514
-Gmail:jdbs9514@gmail.com
-GitHub: @jdbs9514
+- twitter:@JODA9514
+- Gmail:jdbs9514@gmail.com
+- GitHub: @jdbs9514
 
 ## 📝 License
 
