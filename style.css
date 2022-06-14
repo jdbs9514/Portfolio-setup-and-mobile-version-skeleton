@@ -118,6 +118,8 @@ p {
   a {
     margin-top: 25px;
     margin-left: 155px;
+    height: max-content;
+    width: max-content;
   }
 
   .menu {
@@ -156,7 +158,7 @@ p {
   }
 
   .icons {
-    margin-left: 260px;
+    margin-left: 142px;
   }
 
   .icons a {
