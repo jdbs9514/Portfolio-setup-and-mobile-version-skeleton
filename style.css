@@ -158,6 +158,10 @@ p {
   .icons {
     margin-left: 260px;
   }
+
+  .icons a {
+    margin: 0;
+  }
 }
 
 /* second part */
