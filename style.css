@@ -326,9 +326,11 @@ input:hover {
     flex-direction: column;
   }
 
-  h3 {
+  h2 {
     margin-top: 48px;
     font-size: 40px;
+    margin-left: 46px;
+    color: #091e42;
   }
 
   .list {
@@ -469,11 +471,6 @@ h4 {
     flex-direction: column;
   }
 
-  h4 {
-    margin-top: 48px;
-    font-size: 40px;
-  }
-
   .list-2 {
     display: flex;
     flex-direction: row;
@@ -610,11 +607,6 @@ h5 {
   .col-3 {
     display: flex;
     flex-direction: column;
-  }
-
-  h5 {
-    margin-top: 48px;
-    font-size: 40px;
   }
 
   .list-3 {
@@ -755,11 +747,6 @@ h6 {
     flex-direction: column;
   }
 
-  h6 {
-    margin-top: 48px;
-    font-size: 40px;
-  }
-
   .list-2 {
     display: flex;
     flex-direction: row;
@@ -840,7 +827,7 @@ h2.about {
 div.languajes {
   font-family: 'Poppins', sans-serif;
   margin-top: 150px;
-  margin-left: 36px;
+  margin-left: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -994,6 +981,8 @@ img.cs-2 {
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
+    font-size: 30px;
+    color: #000;
   }
 
   .down {
