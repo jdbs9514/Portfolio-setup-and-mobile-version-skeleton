@@ -58,6 +58,10 @@ button.menu {
   cursor: pointer;
 }
 
+button.menu.active{
+  
+}
+
 .nav-menu {
   display: none;
 }
