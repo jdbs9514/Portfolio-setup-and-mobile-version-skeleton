@@ -7,3 +7,10 @@ hamburger.addEventListener("click", () => {
     console.log(hamburger);
 })
 
+const cross = document.querySelector(".close");
+const navList = document.querySelector(".navClose");
+
+cross.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+})
+
