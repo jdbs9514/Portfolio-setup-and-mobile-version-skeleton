@@ -85,6 +85,7 @@ button.menu {
   list-style-type: none;
   margin-bottom: 5%;
 }
+
 .mobile-menu.active {
   left: 0%;
 }
@@ -944,7 +945,6 @@ li.java {
 }
 
 li.ht {
-  margin: 90 310 90 310;
   background-color: #f7f7f9;
   margin-right: 36px;
   border-radius: 10px;
