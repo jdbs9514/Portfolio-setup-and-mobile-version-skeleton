@@ -10,15 +10,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.header {
-  font-family: 'Poppins', sans-serif;
-  font-size: 24px;
-  display: flex;
-  justify-content: space-between;
-  color: #6070ff;
-  font-weight: 700;
-}
-
 .headline {
   background-color: #fff;
   background-image: url("images/mobile.png");
@@ -44,6 +35,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .navigation-mobile {
@@ -58,13 +50,45 @@ button.menu {
   cursor: pointer;
 }
 
-button.menu.active{
+.nav-menu {
+  display: none;  
+}
+
+/* Give style to javascript responsive events*/
+.menu.active {
+  color: green;
+}
+
+.close {
+ text-align: end;
+}
+
+.mobile-menu {
+  width: 100vw;
+  height: 100vh;
+  padding-left: 7.5%;
+  padding-top: 15%;
+  padding-right: 10%;
+  top: 0%;
+  left: -100%;
+  color: #FFFFFF;
+  background-color: #6070FF;
+  opacity: 92%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   
 }
 
-.nav-menu {
-  display: none;
+.mobile-menu li {
+  list-style-type: none;
+  margin-bottom: 5%;
 }
+.mobile-menu.active {
+  left: 0%;
+}
+/* Finish style for javascript*/
 
 h1 {
   color: #172b4d;
