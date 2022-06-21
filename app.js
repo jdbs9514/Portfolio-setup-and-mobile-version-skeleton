@@ -14,3 +14,9 @@ cross.addEventListener("click", () => {
     navMenu.classList.remove("active");
 })
 
+const closeMenu = document.querySelector(".navClose");
+
+closeMenu.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+})
+
