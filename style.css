@@ -10,7 +10,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-
 .headline {
   background-color: #fff;
   background-image: url("images/mobile.png");
@@ -52,16 +51,17 @@ button.menu {
 }
 
 .nav-menu {
-  display: none;  
+  display: none;
 }
 
-/* Give style to javascript responsive events*/
+/* Give style to javascript responsive events */
+
 .menu.active {
   color: green;
 }
 
 .close {
- text-align: end;
+  text-align: end;
 }
 
 .mobile-menu {
@@ -72,14 +72,13 @@ button.menu {
   padding-right: 10%;
   top: 0%;
   left: -100%;
-  color: #FFFFFF;
-  background-color: #6070FF;
+  color: #fff;
+  background-color: #6070ff;
   opacity: 92%;
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  
 }
 
 .mobile-menu li {
@@ -89,7 +88,8 @@ button.menu {
 .mobile-menu.active {
   left: 0%;
 }
-/* Finish style for javascript*/
+
+/* Finish style for javascript */
 
 h1 {
   color: #172b4d;
@@ -108,7 +108,6 @@ h1 {
   line-height: 24px;
   margin: 20px;
   border-radius: 8px;
-  padding: 12px, 16px, 12px, 16px;
 }
 
 .lets-connect {
@@ -136,10 +135,6 @@ h1 {
 .icons a {
   margin: 0;
   color: inherit;
-}
-
-p {
-  font-weight: 5px;
 }
 
 @media screen and (min-width: 768px) {
@@ -942,7 +937,6 @@ i.fa-angle-right {
 }
 
 li.java {
-  margin: 90 310 90 310;
   background-color: #f7f7f9;
   margin-right: 36px;
   border-radius: 10px;
@@ -958,7 +952,6 @@ li.ht {
 }
 
 li.cs {
-  margin: 90 310 90 310;
   background-color: #f7f7f9;
   margin-right: 36px;
   border-radius: 10px;
