@@ -218,7 +218,7 @@ h1 {
   width: fit-content;
 }
 
-h2 {  
+h2 {
   color: #172b4d;
 }
 
@@ -239,20 +239,20 @@ h3 {
   line-height: 16px;
   color: #344563;
   list-style-type: none;
-  padding-right: 20px;  
+  padding-right: 20px;
 }
 
 .back-end {
   font-weight: 600;
   font-size: 13px;
-  line-height: 16px;  
+  line-height: 16px;
   padding-right: 20px;
 }
 
 .num {
   font-weight: 600;
   font-size: 13px;
-  line-height: 16px; 
+  line-height: 16px;
   padding-right: 20px;
 }
 
@@ -262,7 +262,7 @@ h3 {
   font-weight: 510;
   color: #69768c;
   display: flex;
-  justify-content: flex-start;  
+  justify-content: flex-start;
   line-height: 24px;
   margin-top: 20px;
   padding-left: 10px;
@@ -1210,17 +1210,24 @@ textarea {
 
 .pop-window {
   background-color: #fff;
-  display: flex;
+  display: none;
+  position: fixed;
   flex-direction: column;
   justify-content: flex-start;
-  border: 1px solid #DFE1E6;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 4%;
   margin: 4%;
 }
 
-.pop-window .active {
+.pop-window.active {
   display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .pop-header {
@@ -1234,7 +1241,7 @@ textarea {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
   margin: 0;
 }
 
@@ -1243,8 +1250,8 @@ textarea {
   border: none;
   background: none;
   outline: none;
-  font-size: 1.50rem;
-  color: #67798E;
+  font-size: 1.5rem;
+  color: #67798e;
 }
 
 .img-pop {
@@ -1252,7 +1259,7 @@ textarea {
   margin-bottom: 12px;
 }
 
-.query-container{
+.query-container {
   display: flex;
   flex-direction: column;
 }
@@ -1287,16 +1294,15 @@ textarea {
   color: #396df2;
   background-color: #fff;
   margin-top: 30px;
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   padding: 10px 20px;
   border-radius: 8px;
   margin-bottom: 20px;
   margin-right: 20px;
-  flex-grow: 1;  
+  flex-grow: 1;
 }
 
 @media screen and (min-width: 768px) {
-
   .query-container {
     flex-direction: row;
   }
