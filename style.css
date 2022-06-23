@@ -200,7 +200,7 @@ h1 {
 /* second part */
 
 .container-2 {
-  margin-top: 250px;
+  margin-top: 88px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -208,18 +208,17 @@ h1 {
   border-radius: 16px;
   margin-left: 24px;
   margin-right: 24px;
+  padding: 16px;
 }
 
 .image-header {
   display: flex;
   justify-content: center;
   margin-top: 16px;
-  margin-left: 16px;
-  margin-right: 16px;
+  width: fit-content;
 }
 
-h2 {
-  margin-left: 9%;
+h2 {  
   color: #172b4d;
 }
 
@@ -236,18 +235,25 @@ h3 {
 .canopy {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
   color: #344563;
   list-style-type: none;
+  padding-right: 20px;  
 }
 
 .back-end {
-  display: flex;
-  justify-content: center;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;  
+  padding-right: 20px;
 }
 
 .num {
-  display: flex;
-  justify-content: end;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px; 
+  padding-right: 20px;
 }
 
 .list {
@@ -256,11 +262,10 @@ h3 {
   font-weight: 510;
   color: #69768c;
   display: flex;
-  justify-content: space-around;
-  margin-right: 5px;
+  justify-content: flex-start;  
   line-height: 24px;
-  height: 146px;
   margin-top: 20px;
+  padding-left: 10px;
 }
 
 .text {
@@ -274,7 +279,7 @@ h3 {
   text-align: justify;
   margin-left: 16px;
   margin-right: 16px;
-  margin-top: -60px;
+  margin-top: 20px;
 }
 
 .html {
@@ -317,7 +322,7 @@ h3 {
 }
 
 .buttom {
-  justify-content: space-around;
+  display: flex;
   margin-top: 16px;
   margin-left: 16px;
 }
@@ -1198,5 +1203,110 @@ textarea {
 
   .b1 {
     margin-left: 8px;
+  }
+}
+
+/* CSS FOR POPUP WINDOW */
+
+.pop-window {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid #DFE1E6;
+  border-radius: 16px;
+  padding: 4%;
+  margin: 4%;
+}
+
+.pop-window .active {
+  display: flex;
+}
+
+.pop-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.pop-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172B4D;
+  margin: 0;
+}
+
+.close-cross {
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 1.50rem;
+  color: #67798E;
+}
+
+.img-pop {
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.query-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.information {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttom-pop {
+  display: flex;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+
+.popbutton {
+  display: flex;
+  justify-content: space-between;
+}
+
+.live {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #396df2;
+  background-color: #fff;
+  margin-top: 30px;
+  border: 1px solid #6070FF;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  flex-grow: 1;  
+}
+
+@media screen and (min-width: 768px) {
+
+  .query-container {
+    flex-direction: row;
+  }
+
+  .information {
+    margin-right: 5%;
+    width: 70%;
+  }
+
+  .sub-container {
+    width: 30%;
   }
 }
