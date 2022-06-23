@@ -22,9 +22,13 @@ const sectionProjects = document.querySelector('.section-project');
 
 // create mobile popup window//
 
+const wrapPop = document.createElement('div');
+wrapPop.classList.add('wrap');
+sectionProjects.appendChild(wrapPop);
+
 const popContainer = document.createElement('div');
 popContainer.classList.add('pop-window');
-sectionProjects.appendChild(popContainer);
+wrapPop.appendChild(popContainer);
 
 // Title and closing cross //
 const headerPop = document.createElement('div');
@@ -135,8 +139,18 @@ const projects = [
     image: './images/Snapshoot.png',
     title: 'tonic',
     articles: ['CANOPY', 'Back End Dev', '2015'],
-    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    Ptext: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     languages: ['html', 'css', 'javascript'],
+    container: 'container-2',
+    imageHeader: 'image-header',
+    column: 'col',
+    titleHeader: 'title',
+    ulList: 'list',
+    text: 'text',
+    btProject: 'buttom',
+    btHtml: 'html',
+    btCss: 'css',
+    btJs: 'javaScript',
     button: 'See Project',
   },
 
@@ -144,8 +158,18 @@ const projects = [
     image: './images/Snapshoot2.png',
     title: 'Multi-post Stories',
     articles: ['FACEBOOK', 'Full stack dev', '2015'],
-    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    Ptext: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     languages: ['html', 'css', 'javascript'],
+    container: 'container-3',
+    imageHeader: 'image-header2',
+    column: 'col-2',
+    titleHeader: 'title-2',
+    ulList: 'list-2',
+    text: 'text-2',
+    btProject: 'buttom-2',
+    btHtml: 'html',
+    btCss: 'css',
+    btJs: 'javaScript',
     button: 'See Project',
   },
 
@@ -153,8 +177,18 @@ const projects = [
     image: './images/Snapshoot3.png',
     title: 'Facebook 360',
     articles: ['FACEBOOK', 'Full stack dev', '2015'],
-    text: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+    Ptext: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     languages: ['html', 'css', 'javascript'],
+    container: 'container-4',
+    imageHeader: 'image-header3',
+    column: 'col-3',
+    titleHeader: 'title-3',
+    ulList: 'list-3',
+    text: 'text-3',
+    btProject: 'buttom-3',
+    btHtml: 'html',
+    btCss: 'css',
+    btJs: 'javaScript',
     button: 'See Project',
   },
 
@@ -162,8 +196,18 @@ const projects = [
     image: './images/Snapshoot4.png',
     title: 'Uber Navigation',
     articles: ['UBER', 'Lead Developer', '2018'],
-    text: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    Ptext: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     languages: ['html', 'css', 'javascript'],
+    container: 'container-5',
+    imageHeader: 'image-header4',
+    column: 'col-4',
+    titleHeader: 'title-4',
+    ulList: 'list-4',
+    text: 'text-4',
+    btProject: 'buttom-4',
+    btHtml: 'html',
+    btCss: 'css',
+    btJs: 'javaScript',
     button: 'See Project',
   },
 ];
@@ -172,11 +216,11 @@ const projects = [
 
 for (let i = 0; i < projects.length; i += 1) {
   const container = document.createElement('div');
-  container.classList.add('container-2');
+  container.classList.add(projects[i].container);
   sectionProjects.appendChild(container);
 
   const imageHeader = document.createElement('h2');
-  imageHeader.classList.add('image-header');
+  imageHeader.classList.add(projects[i].imageHeader);
   container.appendChild(imageHeader);
 
   const imgIntro = document.createElement('img');
@@ -186,11 +230,11 @@ for (let i = 0; i < projects.length; i += 1) {
   imageHeader.appendChild(imgIntro);
 
   const column = document.createElement('div');
-  column.classList.add('col');
+  column.classList.add(projects[i].column);
   container.appendChild(column);
 
   const titleHeader = document.createElement('div');
-  titleHeader.classList.add('title');
+  titleHeader.classList.add(projects[i].titleHeader);
   column.appendChild(titleHeader);
 
   const title = document.createElement('h2');
@@ -198,7 +242,7 @@ for (let i = 0; i < projects.length; i += 1) {
   titleHeader.appendChild(title);
 
   const ulList = document.createElement('ul');
-  ulList.classList.add('list');
+  ulList.classList.add(projects[i].ulList);
   titleHeader.appendChild(ulList);
 
   const listItem1 = document.createElement('li');
@@ -217,15 +261,15 @@ for (let i = 0; i < projects.length; i += 1) {
   ulList.appendChild(listItem3);
 
   const text = document.createElement('div');
-  text.classList.add('text');
+  text.classList.add(projects[i].text);
   column.appendChild(text);
 
   const pText = document.createElement('p');
-  pText.textContent = projects[i].text;
+  pText.textContent = projects[i].Ptext;
   text.appendChild(pText);
 
   const btProject = document.createElement('form');
-  btProject.classList.add('buttom');
+  btProject.classList.add(projects[i].btProject);
   column.appendChild(btProject);
 
   const btHtml = document.createElement('button');
@@ -256,12 +300,12 @@ for (let i = 0; i < projects.length; i += 1) {
   accessDiv.appendChild(seeProject);
 
   seeProject.addEventListener('click', () => {
-    popContainer.classList.add('active');
+    wrapPop.classList.add('active');
   });
-};
+}
 
 // create events //
 
 closePop.addEventListener('click', () => {
-  popContainer.classList.remove('active');
+  wrapPop.classList.remove('active');
 });
