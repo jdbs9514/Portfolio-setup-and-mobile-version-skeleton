@@ -62,86 +62,178 @@ const projects = [
 
 const sectionProjects = document.querySelector('.section-project');
 
-const container = document.createElement('div');
-container.classList.add('container-2');
-sectionProjects.appendChild(container);
+for (let i = 0; i < projects.length; i += 1) {
+  const container = document.createElement('div');
+  container.classList.add('container-2');
+  sectionProjects.appendChild(container);
 
-const imageHeader = document.createElement('h2');
-imageHeader.classList.add('image-header');
-container.appendChild(imageHeader);
+  const imageHeader = document.createElement('h2');
+  imageHeader.classList.add('image-header');
+  container.appendChild(imageHeader);
 
-const imgIntro = document.createElement('img');
-imgIntro.classList.add('img');
-imgIntro.src = projects[0].image;
-imgIntro.alt = 'Snapshoot';
-imageHeader.appendChild(imgIntro);
+  const imgIntro = document.createElement('img');
+  imgIntro.classList.add('img');
+  imgIntro.src = projects[i].image;
+  imgIntro.alt = 'Snapshoot';
+  imageHeader.appendChild(imgIntro);
 
-const column = document.createElement('div');
-column.classList.add('col');
-container.appendChild(column);
+  const column = document.createElement('div');
+  column.classList.add('col');
+  container.appendChild(column);
 
-const titleHeader = document.createElement('div');
-titleHeader.classList.add('title');
-column.appendChild(titleHeader);
+  const titleHeader = document.createElement('div');
+  titleHeader.classList.add('title');
+  column.appendChild(titleHeader);
 
-const title = document.createElement('h2');
-title.textContent = 'Tonic';
-titleHeader.appendChild(title);
+  const title = document.createElement('h2');
+  title.textContent = projects[i].title;
+  titleHeader.appendChild(title);
 
-const ulList = document.createElement('ul');
-ulList.classList.add('list');
-titleHeader.appendChild(ulList);
+  const ulList = document.createElement('ul');
+  ulList.classList.add('list');
+  titleHeader.appendChild(ulList);
 
-const listItem1 = document.createElement('li');
-listItem1.classList.add('canopy');
-listItem1.textContent = 'CANOPY';
-ulList.appendChild(listItem1);
+  const listItem1 = document.createElement('li');
+  listItem1.classList.add('canopy');
+  listItem1.textContent = projects[i].articles['0'];
+  ulList.appendChild(listItem1);
 
-const listItem2 = document.createElement('li');
-listItem2.classList.add('back-end');
-listItem2.textContent = 'Back end dev';
-ulList.appendChild(listItem2);
+  const listItem2 = document.createElement('li');
+  listItem2.classList.add('back-end');
+  listItem2.textContent = projects[i].articles['1'];
+  ulList.appendChild(listItem2);
 
-const listItem3 = document.createElement('li');
-listItem3.classList.add('num');
-listItem3.textContent = '2015';
-ulList.appendChild(listItem3);
+  const listItem3 = document.createElement('li');
+  listItem3.classList.add('num');
+  listItem3.textContent = projects[i].articles['2'];
+  ulList.appendChild(listItem3);
 
-const text = document.createElement('div');
-text.classList.add('text');
-column.appendChild(text);
+  const text = document.createElement('div');
+  text.classList.add('text');
+  column.appendChild(text);
 
-const pText = document.createElement('p');
-pText.textContent = 'A daily selection of privately personalized reads; no accounts or sign-ups required.';
-text.appendChild(pText);
+  const pText = document.createElement('p');
+  pText.textContent = projects[i].text;
+  text.appendChild(pText);
 
-const btProject = document.createElement('form');
-btProject.classList.add('buttom');
-column.appendChild(btProject);
+  const btProject = document.createElement('form');
+  btProject.classList.add('buttom');
+  column.appendChild(btProject);
 
-const btHtml = document.createElement('button');
-btHtml.type = 'button';
-btHtml.classList.add('html');
-btHtml.textContent = 'html';
-btProject.appendChild(btHtml);
+  const btHtml = document.createElement('button');
+  btHtml.type = 'button';
+  btHtml.classList.add('html');
+  btHtml.textContent = 'html';
+  btProject.appendChild(btHtml);
 
-const btCss = document.createElement('button');
-btCss.type = 'button';
-btCss.classList.add('css');
-btCss.textContent = 'css';
-btProject.appendChild(btCss);
+  const btCss = document.createElement('button');
+  btCss.type = 'button';
+  btCss.classList.add('css');
+  btCss.textContent = 'css';
+  btProject.appendChild(btCss);
 
-const btJs = document.createElement('button');
-btJs.type = 'button';
-btJs.classList.add('javaScript');
-btJs.textContent = 'javascript';
-btProject.appendChild(btJs);
+  const btJs = document.createElement('button');
+  btJs.type = 'button';
+  btJs.classList.add('javaScript');
+  btJs.textContent = 'javascript';
+  btProject.appendChild(btJs);
 
-const accessDiv = document.createElement('div');
-column.appendChild(accessDiv);
+  const accessDiv = document.createElement('div');
+  column.appendChild(accessDiv);
 
-const seeProject = document.createElement('input');
-seeProject.type = 'button';
-seeProject.name = 'boton1';
-seeProject.value = 'See Project';
-accessDiv.appendChild(seeProject);
+  const seeProject = document.createElement('input');
+  seeProject.type = 'button';
+  seeProject.name = 'boton1';
+  seeProject.value = 'See Project';
+  accessDiv.appendChild(seeProject);
+}
+
+// create mobile popup window//
+
+const popContainer = document.createElement('div');
+popContainer.classList.add('pop-window');
+sectionProjects.appendChild(popContainer);
+
+const popTitle = document.createElement('h2')
+popTitle.classList.add('pop-title');
+popTitle.textContent = "Tonic";
+popContainer.appendChild(popTitle);
+
+const rowList = document.createElement('div');
+rowList.classList.add('list');
+popContainer.appendChild(rowList);
+
+const popList = document.createElement('ul');
+popList.classList.add('list-pop');
+rowList.appendChild(popList);
+
+const elemt1 = document.createElement('li');
+elemt1.classList.add('canopy');
+elemt1.textContent = "CANOPY";
+popList.appendChild(elemt1);
+
+const elemt2 = document.createElement('li');
+elemt2.classList.add('back-end');
+elemt2.textContent = "Back End Dev";
+popList.appendChild(elemt2);
+
+const elemt3 = document.createElement('li');
+elemt3.classList.add('num');
+elemt3.textContent = "2015";
+popList.appendChild(elemt2);
+
+const imgPop = document.createElement('img');
+imgPop.classList.add('img-pop');
+imgPop.src = "./images/Snapshoot.png";
+imgPop.alt = "Snaoshoot"
+popContainer.appendChild(imgPop);
+
+const textPop = document.createElement('div');
+textPop.classList.add('information');
+popContainer.appendChild(textPop);
+
+const pPop = document.createElement('p');
+pPop.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent";
+textPop.appendChild(pPop);
+
+const formPop = document.createElement('form');
+formPop.classList.add('buttom');
+popContainer.appendChild('formPop');
+
+const buttonPop = document.createElement('button');
+buttonPop.classList.add('html');
+buttonPop.type = "button";
+buttonPop.textContent = "html";
+formPop.appendChild(buttonPop);
+
+const buttonPop2 = document.createElement('button');
+buttonPop2.classList.add('css');
+buttonPop2.type = "button";
+buttonPop2.textContent = "css";
+formPop.appendChild(buttonPop2);
+
+const buttonPop3 = document.createElement('button');
+buttonPop3.classList.add('javaScript');
+buttonPop3.type = "button";
+buttonPop3.textContent = "javaScript";
+formPop.appendChild(buttonPop3);
+
+const divButton = document.createElement('div');
+divButton.classList.add('popbutton');
+popContainer.appendChild(divButton);
+
+const liveButton = document.createElement('button');
+liveButton.classList.add('live');
+liveButton.type = "button";
+liveButton.innerHTML = 'See live <i class="fa-solid fa-arrow-up-right-from-square"></i>';
+divButton.appendChild(liveButton);
+
+const liveButton2 = document.createElement('button');
+liveButton2.classList.add('live');
+liveButton2.type = "button";
+liveButton2.innerHTML = 'See Source <i class="fa-brands fa-github"></i>';
+divButton.appendChild(liveButton2);
+
+
+
+
