@@ -20,7 +20,6 @@ closeMenu.addEventListener('click', () => {
 
 const sectionProjects = document.querySelector('.section-project');
 
-
 // create an array //
 
 const projects = [
@@ -189,7 +188,6 @@ for (let i = 0; i < projects.length; i += 1) {
   accessDiv.appendChild(seeProject);
 
   seeProject.addEventListener('click', () => {
-
     // create mobile popup window//
     const wrapPop = document.createElement('div');
     wrapPop.classList.add('wrap');
@@ -218,17 +216,17 @@ for (let i = 0; i < projects.length; i += 1) {
 
     const elemt1 = document.createElement('li');
     elemt1.classList.add('canopy');
-    elemt1.textContent = projects[i].articles[0];
+    elemt1.textContent = projects[i].articles['0'];
     popList.appendChild(elemt1);
 
     const elemt2 = document.createElement('li');
     elemt2.classList.add('back-end');
-    elemt2.textContent = projects[i].articles[1];
+    elemt2.textContent = projects[i].articles['1'];
     popList.appendChild(elemt2);
 
     const elemt3 = document.createElement('li');
     elemt3.classList.add('num');
-    elemt3.textContent = projects[i].articles[2];
+    elemt3.textContent = projects[i].articles['2'];
     popList.appendChild(elemt3);
 
     // Project image //
@@ -303,8 +301,5 @@ for (let i = 0; i < projects.length; i += 1) {
     closePop.addEventListener('click', () => {
       wrapPop.classList.remove('active');
     });
-
   });
-
-
 }
