@@ -20,117 +20,6 @@ closeMenu.addEventListener('click', () => {
 
 const sectionProjects = document.querySelector('.section-project');
 
-// create mobile popup window//
-
-const wrapPop = document.createElement('div');
-wrapPop.classList.add('wrap');
-sectionProjects.appendChild(wrapPop);
-
-const popContainer = document.createElement('div');
-popContainer.classList.add('pop-window');
-wrapPop.appendChild(popContainer);
-
-// Title and closing cross //
-const headerPop = document.createElement('div');
-headerPop.classList.add('pop-header');
-popContainer.appendChild(headerPop);
-
-const popTitle = document.createElement('h2');
-popTitle.classList.add('pop-title');
-popTitle.textContent = 'Tonic';
-headerPop.appendChild(popTitle);
-
-const closePop = document.createElement('button');
-closePop.classList.add('close-cross');
-closePop.innerHTML = '<i class="fa-solid fa-xmark"></i>';
-headerPop.appendChild(closePop);
-
-// Tags: client, role, year
-const popList = document.createElement('ul');
-popList.classList.add('list');
-popContainer.appendChild(popList);
-
-const elemt1 = document.createElement('li');
-elemt1.classList.add('canopy');
-elemt1.textContent = 'CANOPY';
-popList.appendChild(elemt1);
-
-const elemt2 = document.createElement('li');
-elemt2.classList.add('back-end');
-elemt2.textContent = 'Back End Dev';
-popList.appendChild(elemt2);
-
-const elemt3 = document.createElement('li');
-elemt3.classList.add('num');
-elemt3.textContent = '2015';
-popList.appendChild(elemt3);
-
-// Project image //
-const imgPop = document.createElement('img');
-imgPop.classList.add('img-pop');
-imgPop.src = './images/Snapshoot.png';
-imgPop.alt = 'Snaoshoot';
-popContainer.appendChild(imgPop);
-
-// Media query container//
-
-const mediaQuery = document.createElement('div');
-mediaQuery.classList.add('query-container');
-popContainer.appendChild(mediaQuery);
-
-// Project descripcion //
-const textPop = document.createElement('div');
-textPop.classList.add('information');
-mediaQuery.appendChild(textPop);
-
-const pPop = document.createElement('p');
-pPop.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent";
-textPop.appendChild(pPop);
-
-// media query sub-container //
-const subContainer = document.createElement('div');
-subContainer.classList.add('sub-container');
-mediaQuery.appendChild(subContainer);
-
-// Languages cards //
-const formPop = document.createElement('form');
-formPop.classList.add('buttom-pop');
-subContainer.appendChild(formPop);
-
-const buttonPop = document.createElement('button');
-buttonPop.classList.add('html');
-buttonPop.type = 'button';
-buttonPop.textContent = 'html';
-formPop.appendChild(buttonPop);
-
-const buttonPop2 = document.createElement('button');
-buttonPop2.classList.add('css');
-buttonPop2.type = 'button';
-buttonPop2.textContent = 'css';
-formPop.appendChild(buttonPop2);
-
-const buttonPop3 = document.createElement('button');
-buttonPop3.classList.add('javaScript');
-buttonPop3.type = 'button';
-buttonPop3.textContent = 'javaScript';
-formPop.appendChild(buttonPop3);
-
-// Link buttons //
-const divButton = document.createElement('div');
-divButton.classList.add('popbutton');
-subContainer.appendChild(divButton);
-
-const liveButton = document.createElement('button');
-liveButton.classList.add('live');
-liveButton.type = 'button';
-liveButton.innerHTML = 'See live <i class="fa-solid fa-arrow-up-right-from-square"></i>';
-divButton.appendChild(liveButton);
-
-const liveButton2 = document.createElement('button');
-liveButton2.classList.add('live');
-liveButton2.type = 'button';
-liveButton2.innerHTML = 'See Source <i class="fa-brands fa-github"></i>';
-divButton.appendChild(liveButton2);
 
 // create an array //
 
@@ -300,12 +189,122 @@ for (let i = 0; i < projects.length; i += 1) {
   accessDiv.appendChild(seeProject);
 
   seeProject.addEventListener('click', () => {
+
+    // create mobile popup window//
+    const wrapPop = document.createElement('div');
+    wrapPop.classList.add('wrap');
+    sectionProjects.appendChild(wrapPop);
+    const popContainer = document.createElement('div');
+    popContainer.classList.add('pop-window');
+    wrapPop.appendChild(popContainer);
+    // Title and closing cross //
+    const headerPop = document.createElement('div');
+    headerPop.classList.add('pop-header');
+    popContainer.appendChild(headerPop);
+
+    const popTitle = document.createElement('h2');
+    popTitle.classList.add('pop-title');
+    popTitle.textContent = projects[i].title;
+    headerPop.appendChild(popTitle);
+
+    const closePop = document.createElement('button');
+    closePop.classList.add('close-cross');
+    closePop.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+    headerPop.appendChild(closePop);
+    // Tags: client, role, year
+    const popList = document.createElement('ul');
+    popList.classList.add('list');
+    popContainer.appendChild(popList);
+
+    const elemt1 = document.createElement('li');
+    elemt1.classList.add('canopy');
+    elemt1.textContent = projects[i].articles[0];
+    popList.appendChild(elemt1);
+
+    const elemt2 = document.createElement('li');
+    elemt2.classList.add('back-end');
+    elemt2.textContent = projects[i].articles[1];
+    popList.appendChild(elemt2);
+
+    const elemt3 = document.createElement('li');
+    elemt3.classList.add('num');
+    elemt3.textContent = projects[i].articles[2];
+    popList.appendChild(elemt3);
+
+    // Project image //
+    const imgPop = document.createElement('img');
+    imgPop.classList.add('img-pop');
+    imgPop.src = projects[i].image;
+    imgPop.alt = 'Snaoshoot';
+    popContainer.appendChild(imgPop);
+
+    // Media query container//
+
+    const mediaQuery = document.createElement('div');
+    mediaQuery.classList.add('query-container');
+    popContainer.appendChild(mediaQuery);
+
+    // Project descripcion //
+    const textPop = document.createElement('div');
+    textPop.classList.add('information');
+    mediaQuery.appendChild(textPop);
+
+    const pPop = document.createElement('p');
+    pPop.textContent = projects[i].Ptext;
+    textPop.appendChild(pPop);
+
+    // media query sub-container //
+    const subContainer = document.createElement('div');
+    subContainer.classList.add('sub-container');
+    mediaQuery.appendChild(subContainer);
+
+    // Languages cards //
+    const formPop = document.createElement('form');
+    formPop.classList.add('buttom-pop');
+    subContainer.appendChild(formPop);
+
+    const buttonPop = document.createElement('button');
+    buttonPop.classList.add('html');
+    buttonPop.type = 'button';
+    buttonPop.textContent = 'html';
+    formPop.appendChild(buttonPop);
+
+    const buttonPop2 = document.createElement('button');
+    buttonPop2.classList.add('css');
+    buttonPop2.type = 'button';
+    buttonPop2.textContent = 'css';
+    formPop.appendChild(buttonPop2);
+
+    const buttonPop3 = document.createElement('button');
+    buttonPop3.classList.add('javaScript');
+    buttonPop3.type = 'button';
+    buttonPop3.textContent = 'javaScript';
+    formPop.appendChild(buttonPop3);
+
+    // Link buttons //
+    const divButton = document.createElement('div');
+    divButton.classList.add('popbutton');
+    subContainer.appendChild(divButton);
+
+    const liveButton = document.createElement('button');
+    liveButton.classList.add('live');
+    liveButton.type = 'button';
+    liveButton.innerHTML = 'See live <i class="fa-solid fa-arrow-up-right-from-square"></i>';
+    divButton.appendChild(liveButton);
+
+    const liveButton2 = document.createElement('button');
+    liveButton2.classList.add('live');
+    liveButton2.type = 'button';
+    liveButton2.innerHTML = 'See Source <i class="fa-brands fa-github"></i>';
+    divButton.appendChild(liveButton2);
+
     wrapPop.classList.add('active');
+
+    closePop.addEventListener('click', () => {
+      wrapPop.classList.remove('active');
+    });
+
   });
+
+
 }
-
-// create events //
-
-closePop.addEventListener('click', () => {
-  wrapPop.classList.remove('active');
-});
