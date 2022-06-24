@@ -312,11 +312,11 @@ const error = document.querySelector('.errormsg');
 
 form.addEventListener('submit', (event) => {
   const formEmail = mail.value;
-  if (formEmail.toLowerCase() !== formEmail){
+  if (formEmail.toLowerCase() !== formEmail) {
     error.innerHTML = 'E-mail address must be lowercase. The form will not be sent <i class="fa-solid fa-triangle-exclamation"></i>';
-    //error.classList.add('active');
+    error.classList.add('active');
     event.preventDefault();
   } else {
     error.classList.remove('active');
   }
-})
+});
