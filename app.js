@@ -320,3 +320,26 @@ form.addEventListener('submit', (event) => {
     error.classList.remove('active');
   }
 });
+
+// preserve data in local storage //
+
+const user = document.getElementById('form-name');
+const userComment = document.getElementById('form-message');
+
+let userInput;
+
+form.addEventListener('input', () => {
+  const userName = user.value;
+  const userEmail = mail.value;
+  const userText = userComment.value;
+  userInput = { userName, userEmail, userText };
+  localStorage.setItem('userData', JSON.stringify(userInput));
+});
+
+// retrieve data //
+if (localStorage.getItem('userData')) {
+  userInput = JSON.parse(localStorage.getItem('userData'));
+  user.value = userInput.userName;
+  mail.value = userInput.userEmail;
+  userComment.value = userInput.userText;
+}
