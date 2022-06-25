@@ -320,3 +320,21 @@ form.addEventListener('submit', (event) => {
     error.classList.remove('active');
   }
 });
+
+// preserve data in local storage //
+
+const user = document.getElementById('form-name');
+const userComment = document.getElementById('form-message');
+
+let userInput;
+
+form.addEventListener('input', () => {
+  const userName = user.value;
+  const userEmail = mail.value;
+  const userText = userComment.value;
+  userInput = {userName, userEmail, userText};
+  localStorage.setItem("userData", JSON.stringify(userInput));
+});
+
+// retrieve data //
+
