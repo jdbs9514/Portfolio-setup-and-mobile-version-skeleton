@@ -124,6 +124,24 @@ h1 {
   align-items: flex-start;
 }
 
+/* Style for form validation error message */
+.errormsg {
+  margin: 3%;
+  margin-top: 20px;
+  padding: 1%;
+  width: 325px;
+  font-size: small;
+  color: red;
+  background: gainsboro;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+  display: none;
+}
+
+.errormsg.active {
+  display: block;
+}
+
 .icons {
   color: #505f79;
   margin-top: 20px;
@@ -1100,12 +1118,12 @@ section.form-container {
   background-image: url("/images/header-shapes\ mobile.svg");
   background-repeat: no-repeat;
   background-color: #5263ff;
-  background-size: 100vw;
+  background-size: cover;
   border-top-left-radius: 5rem;
   padding-top: 15px;
   padding-left: 15px;
+  padding-bottom: 100px;
   margin-top: 150px;
-  height: 779px;
   display: flex;
   flex-direction: column;
 }
@@ -1234,7 +1252,7 @@ textarea {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 4%;
-  margin: 4%;
+  margin: 2%;
   overflow-y: scroll;
 }
 
